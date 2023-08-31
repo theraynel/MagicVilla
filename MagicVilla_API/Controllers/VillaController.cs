@@ -30,10 +30,10 @@ namespace MagicVilla_API.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status409Conflict)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [producesresponsetype(statuscodes.status201created)]
+        [producesresponsetype(statuscodes.status400badrequest)]
+        [producesresponsetype(statuscodes.status409conflict)]
+        [producesresponsetype(statuscodes.status500internalservererror)]
         public ActionResult<VillaDto> CrearVilla( VillaDto villa) 
         {
             if(!ModelState.IsValid) return BadRequest(ModelState);
